@@ -1,0 +1,166 @@
+package com.training.pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+public class RetailRegisterTestPOM {
+	private WebDriver driver;
+
+	public RetailRegisterTestPOM(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+
+	@FindBy(css = "i.fa.fa-user-o")
+	private WebElement accountLink;
+
+	public void accntClk() {
+		Actions action = new Actions(driver);
+		action.moveToElement(accountLink).build().perform();
+	}
+
+	@FindBy(xpath = "//span[contains(text(),'LOGIN')]")
+	private WebElement loginRegClk;
+
+	@FindBy(css = "a.btn.btn-primary")
+	private WebElement registerClk;
+
+	@FindBy(id = "input-firstname")
+	private WebElement entrFirstName;
+
+	@FindBy(id = "input-lastname")
+	private WebElement entrLastName;
+
+	@FindBy(name = "email")
+	private WebElement entrEmail;
+
+	@FindBy(id = "input-telephone")
+	private WebElement entrTelPhone;
+
+	@FindBy(id = "input-address-1")
+	private WebElement address1;
+
+	@FindBy(id = "input-address-2")
+	private WebElement address2;
+
+	@FindBy(id = "input-city")
+	private WebElement cityDetails;
+
+	@FindBy(id = "input-postcode")
+	private WebElement pinCode;
+
+	@FindBy(id = "input-country")
+	private WebElement countryList;
+
+	public void selectCountry() {
+		Select selectCountry = new Select(countryList);
+		selectCountry.selectByVisibleText("India");
+	}
+
+	@FindBy(xpath = "//select[@id='input-zone']")
+	private WebElement regionState;
+
+	public void selectState() {
+		Select selectState = new Select(regionState);
+		selectState.selectByVisibleText("Karnataka");
+	}
+
+	@FindBy(id = "input-password")
+	private WebElement password;
+
+	@FindBy(id = "input-confirm")
+	private WebElement confirmPasswd;
+
+	@FindBy(xpath = "//input[@value='0']")
+	private WebElement noRadioselect;
+
+	@FindBy(xpath = "//input[@type='checkbox']")
+	private WebElement chkCheckBox;
+
+	@FindBy(xpath = "//input[@value='Continue']")
+	private WebElement clkContinue;
+
+	@FindBy(xpath = "//div[@class='tb_text_wrap tb_sep']")
+	private WebElement verifyMessage;
+
+	public void ClkLoginRegister() {
+		this.loginRegClk.click();
+	}
+
+	public void registerClick() {
+		this.registerClk.click();
+	}
+
+	public void enterFName(String firstname) {
+		this.entrFirstName.sendKeys(firstname);
+	}
+
+	public void enterLName(String lastname) {
+		this.entrLastName.sendKeys(lastname);
+	}
+
+	public void enterEmail(String enteremail) {
+		this.entrEmail.sendKeys(enteremail);
+	}
+
+	public void enterTPhone(String phone) {
+		this.entrTelPhone.sendKeys(phone);
+	}
+
+	public void enterAddress1(String addressone) {
+		this.address1.sendKeys(addressone);
+	}
+
+	public void enterAddress2(String addresstwo) {
+		this.address2.sendKeys(addresstwo);
+	}
+
+	public void enterCity(String city) {
+		this.cityDetails.sendKeys(city);
+
+	}
+
+	public void enterPinCode(String pincode) {
+		this.pinCode.sendKeys("123456");
+	}
+
+	public void selctContry() {
+		this.selectCountry();
+	}
+
+	public void selctState() {
+		this.selctState();
+	}
+
+	public void enterPassword(String pass) {
+		this.password.sendKeys(pass);
+
+	}
+
+	public void confirmPassword(String cpass) {
+		this.confirmPasswd.sendKeys(cpass);
+
+	}
+
+	public void selectNoRadioBtn() {
+		this.noRadioselect.click();
+	}
+
+	public void checkCheckBox() {
+		this.chkCheckBox.click();
+	}
+
+	public void continueButton() {
+		this.clkContinue.click();
+	}
+
+	public void verifyTheMessage() {
+		String message = verifyMessage.getText();
+		System.out.println(message);
+	}
+
+}
