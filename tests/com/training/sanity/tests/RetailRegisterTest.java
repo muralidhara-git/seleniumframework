@@ -43,7 +43,7 @@ public class RetailRegisterTest {
 
 	@AfterMethod
 	public void tearDown() throws Exception {
-		Thread.sleep(1000);
+		Thread.sleep(1500);
 		driver.quit();
 	}
 
