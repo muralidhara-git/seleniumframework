@@ -2,60 +2,60 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Retail Upskill test Suite" duration-ms="185135" started-at="2020-05-07T15:17:39Z" finished-at="2020-05-07T15:20:45Z">
+  <suite name="Retail Upskill test Suite" duration-ms="170712" started-at="2020-05-08T07:49:50Z" finished-at="2020-05-08T07:52:41Z">
     <groups>
     </groups>
-    <test name="Registration test" duration-ms="185135" started-at="2020-05-07T15:17:39Z" finished-at="2020-05-07T15:20:45Z">
+    <test name="Registration test" duration-ms="170712" started-at="2020-05-08T07:49:50Z" finished-at="2020-05-08T07:52:41Z">
       <class name="com.training.sanity.tests.RetailLoginRecoverTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RetailLoginRecoverTest@c038203]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2020-05-07T20:49:59Z" finished-at="2020-05-07T20:49:59Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RetailLoginRecoverTest@c038203]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2020-05-08T13:21:57Z" finished-at="2020-05-08T13:21:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RetailLoginRecoverTest@c038203]" name="setUp" is-config="true" duration-ms="24201" started-at="2020-05-07T20:49:59Z" finished-at="2020-05-07T20:50:23Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RetailLoginRecoverTest@c038203]" name="setUp" is-config="true" duration-ms="22217" started-at="2020-05-08T13:21:57Z" finished-at="2020-05-08T13:22:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.RetailLoginRecoverTest@c038203]" name="validLoginTest" duration-ms="19471" started-at="2020-05-07T20:50:23Z" finished-at="2020-05-07T20:50:43Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.RetailLoginRecoverTest@c038203]" name="validLoginTest" duration-ms="19408" started-at="2020-05-08T13:22:20Z" finished-at="2020-05-08T13:22:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RetailLoginRecoverTest@c038203]" name="tearDown" is-config="true" duration-ms="1739" started-at="2020-05-07T20:50:43Z" finished-at="2020-05-07T20:50:45Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RetailLoginRecoverTest@c038203]" name="tearDown" is-config="true" duration-ms="1682" started-at="2020-05-08T13:22:39Z" finished-at="2020-05-08T13:22:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.training.sanity.tests.RetailLoginRecoverTest -->
       <class name="com.training.sanity.tests.RetailLoginTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RetailLoginTest@29ee9faa]" name="setUpBeforeClass" is-config="true" duration-ms="30" started-at="2020-05-07T20:49:09Z" finished-at="2020-05-07T20:49:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RetailLoginTest@29ee9faa]" name="setUp" is-config="true" duration-ms="24212" started-at="2020-05-07T20:49:09Z" finished-at="2020-05-07T20:49:33Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RetailLoginTest@29ee9faa]" name="setUp" is-config="true" duration-ms="44665" started-at="2020-05-08T13:20:56Z" finished-at="2020-05-08T13:21:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.RetailLoginTest@29ee9faa]" name="validLoginTest" duration-ms="24613" started-at="2020-05-07T20:49:33Z" finished-at="2020-05-07T20:49:57Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RetailLoginTest@29ee9faa]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2020-05-08T13:20:56Z" finished-at="2020-05-08T13:20:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.RetailLoginTest@29ee9faa]" name="validLoginTest" duration-ms="15258" started-at="2020-05-08T13:21:41Z" finished-at="2020-05-08T13:21:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RetailLoginTest@29ee9faa]" name="tearDown" is-config="true" duration-ms="1747" started-at="2020-05-07T20:49:57Z" finished-at="2020-05-07T20:49:59Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RetailLoginTest@29ee9faa]" name="tearDown" is-config="true" duration-ms="1703" started-at="2020-05-08T13:21:56Z" finished-at="2020-05-08T13:21:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.training.sanity.tests.RetailLoginTest -->
       <class name="com.training.sanity.tests.RetailRegisterTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RetailRegisterTest@6767c1fc]" name="setUpBeforeClass" is-config="true" duration-ms="3" started-at="2020-05-07T20:47:39Z" finished-at="2020-05-07T20:47:39Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RetailRegisterTest@6767c1fc]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2020-05-08T13:19:50Z" finished-at="2020-05-08T13:19:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RetailRegisterTest@6767c1fc]" name="setUp" is-config="true" duration-ms="51180" started-at="2020-05-07T20:47:39Z" finished-at="2020-05-07T20:48:31Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RetailRegisterTest@6767c1fc]" name="setUp" is-config="true" duration-ms="36812" started-at="2020-05-08T13:19:50Z" finished-at="2020-05-08T13:20:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registerDetails()[pri:0, instance:com.training.sanity.tests.RetailRegisterTest@6767c1fc]" name="registerDetails" duration-ms="36112" started-at="2020-05-07T20:48:31Z" finished-at="2020-05-07T20:49:07Z">
+        <test-method status="PASS" signature="registerDetails()[pri:0, instance:com.training.sanity.tests.RetailRegisterTest@6767c1fc]" name="registerDetails" duration-ms="26693" started-at="2020-05-08T13:20:27Z" finished-at="2020-05-08T13:20:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerDetails -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RetailRegisterTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="1794" started-at="2020-05-07T20:49:07Z" finished-at="2020-05-07T20:49:09Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RetailRegisterTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="2242" started-at="2020-05-08T13:20:54Z" finished-at="2020-05-08T13:20:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -11,7 +11,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.training.generics.ScreenShot;
-import com.training.pom.LoginPOM;
 import com.training.pom.RetailLoginPOM;
 import com.training.pom.RetailLoginRecoverPOM;
 import com.training.utility.DriverFactory;
@@ -21,7 +20,6 @@ public class RetailLoginRecoverTest {
 
 	private WebDriver driver;
 	private String baseUrl;
-	private LoginPOM loginPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
 	private RetailLoginPOM retailLoginPOM;

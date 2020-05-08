@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.training.bean.LoginBean;
 import com.training.generics.ScreenShot;
 import com.training.pom.LoginPOM;
 import com.training.utility.DriverFactory;
@@ -19,7 +20,7 @@ public class LoginTests {
 
 	private WebDriver driver;
 	private String baseUrl;
-	private LoginPOM loginPOM;
+	private LoginTests loginPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
 
@@ -33,7 +34,7 @@ public class LoginTests {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new LoginPOM(driver); 
+		loginPOM = new LoginTests(); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		// open the browser 
@@ -51,5 +52,20 @@ public class LoginTests {
 		loginPOM.sendPassword("admin@123");
 		loginPOM.clickLoginBtn(); 
 		screenShot.captureScreenShot("First");
+	}
+
+	private void clickLoginBtn() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void sendPassword(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void sendUserName(String string) {
+		// TODO Auto-generated method stub
+		
 	}
 }
