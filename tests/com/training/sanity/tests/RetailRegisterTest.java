@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.training.generics.ScreenShot;
-import com.training.pom.RetailRegisterTestPOM;
+import com.training.pom.RetailRegisterPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
@@ -19,7 +19,7 @@ public class RetailRegisterTest {
 
 	private WebDriver driver;
 	private String baseUrl;
-	private RetailRegisterTestPOM retailPOM;
+	private RetailRegisterPOM retailPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
 
@@ -33,7 +33,7 @@ public class RetailRegisterTest {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		retailPOM = new RetailRegisterTestPOM(driver);
+		retailPOM = new RetailRegisterPOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
 		// open the browser
@@ -46,14 +46,14 @@ public class RetailRegisterTest {
 		driver.quit();
 	}
 
-	@Test
+	@Test(priority=1)
 	public void registerDetails() throws Exception {
 		retailPOM.accntClk();
 		retailPOM.ClkLoginRegister();
 		retailPOM.registerClick();
 		retailPOM.enterFName("Test");
-		retailPOM.enterLName("Register2");
-		retailPOM.enterEmail("test10@gmail.com");
+		retailPOM.enterLName("Register4");
+		retailPOM.enterEmail("test12@gmail.com");
 		retailPOM.enterTPhone("7152431234");
 		retailPOM.enterAddress1("Vijayanagar");
 		retailPOM.enterAddress2("bangalore");
@@ -67,6 +67,26 @@ public class RetailRegisterTest {
 		retailPOM.checkCheckBox();
 		retailPOM.continueButton();
 		retailPOM.verifyTheMessage();
-		screenShot.captureScreenShot("First");
+		screenShot.captureScreenShot("AccountRegister");
+	}
+	@Test(priority=2)
+	public void loginWithValidId() {
+		retailPOM.accntClk();
+		retailPOM.ClkLoginRegister();
+		retailPOM.sendEmailAddress("test009@gmail.com");
+		retailPOM.enterPassword("password1");
+		retailPOM.clickLoginBtn();
+		screenShot.captureScreenShot("LoginWithValidID");
+	}
+	@Test(priority=3)
+	public void recoverLogin() {
+		retailPOM.accntClk();
+		retailPOM.ClkLoginRegister();
+		retailPOM.sendEmailAddress("manzoor@gmail.com");
+		retailPOM.enterPassword("manzoor");
+		retailPOM.forgotPasswordLink();
+		retailPOM.recoverEmailAddress("manzoor@gmail.com");
+		retailPOM.clickContinue();
+		screenShot.captureScreenShot("RecoverLoginId");
 	}
 }

@@ -7,10 +7,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class RetailRegisterTestPOM {
+public class RetailRegisterPOM {
 	private WebDriver driver;
 
-	public RetailRegisterTestPOM(WebDriver driver) {
+	public RetailRegisterPOM(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -86,6 +86,26 @@ public class RetailRegisterTestPOM {
 
 	@FindBy(xpath = "//div[@class='tb_text_wrap tb_sep']")
 	private WebElement verifyMessage;
+	
+	//------------TestCase 2----------------------------------------
+	@FindBy(id = "input-email")
+	private WebElement emailAddress;
+
+	@FindBy(xpath = "//input[@value='Login']")
+	private WebElement loginBtn;
+	
+	//------------TestCase 3----------------------------------------
+	
+	@FindBy(linkText = "Forgotten Password")
+	private WebElement forgotLnk;
+
+	@FindBy(name = "email")
+	private WebElement emailAddressLnk;
+
+	@FindBy(xpath = "//input[@value='Continue']")
+	private WebElement clkContinueBtn;
+	
+	//---------------------------------------------
 
 	public void ClkLoginRegister() {
 		this.loginRegClk.click();
@@ -125,7 +145,7 @@ public class RetailRegisterTestPOM {
 	}
 
 	public void enterPinCode(String pincode) {
-		this.pinCode.sendKeys("123456");
+		this.pinCode.sendKeys(pincode);
 	}
 
 	public void selctContry() {
@@ -161,6 +181,25 @@ public class RetailRegisterTestPOM {
 	public void verifyTheMessage() {
 		String message = verifyMessage.getText();
 		System.out.println(message);
+	}
+// ----- Test case 2----------
+	public void sendEmailAddress(String emailaddress) {
+		this.emailAddress.sendKeys(emailaddress);
+	}
+	public void clickLoginBtn() {
+		this.loginBtn.click();
+	}
+// ------Test case 3---------
+	public void forgotPasswordLink() {
+		this.forgotLnk.click();
+	}
+
+	public void recoverEmailAddress(String recoveremailaddress) {
+		this.emailAddress.sendKeys(recoveremailaddress);
+	}
+
+	public void clickContinue() {
+		this.clkContinueBtn.click();
 	}
 
 }
