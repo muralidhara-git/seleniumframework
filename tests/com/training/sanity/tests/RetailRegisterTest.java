@@ -46,7 +46,7 @@ public class RetailRegisterTest {
 		driver.quit();
 	}
 
-	@Test(priority=1)
+	@Test(priority = 1, enabled = true)
 	public void registerDetails() throws Exception {
 		retailPOM.accntClk();
 		retailPOM.ClkLoginRegister();
@@ -69,7 +69,8 @@ public class RetailRegisterTest {
 		retailPOM.verifyTheMessage();
 		screenShot.captureScreenShot("AccountRegister");
 	}
-	@Test(priority=2)
+
+	@Test(priority = 2, enabled = true)
 	public void loginWithValidId() {
 		retailPOM.accntClk();
 		retailPOM.ClkLoginRegister();
@@ -78,7 +79,8 @@ public class RetailRegisterTest {
 		retailPOM.clickLoginBtn();
 		screenShot.captureScreenShot("LoginWithValidID");
 	}
-	@Test(priority=3)
+
+	@Test(priority = 3, enabled = true)
 	public void recoverLogin() {
 		retailPOM.accntClk();
 		retailPOM.ClkLoginRegister();
@@ -89,4 +91,5 @@ public class RetailRegisterTest {
 		retailPOM.clickContinue();
 		screenShot.captureScreenShot("RecoverLoginId");
 	}
+
 }

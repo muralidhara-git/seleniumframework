@@ -3,26 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.training.sanity.tests.RegisterTestCases">
+      <class name="com.training.regression.tests.LoginMultipleValuesTest">
         <methods>
-          <include name="checkBoxSelect"/>
-          <include name="city"/>
           <include name="tearDown"/>
-          <include name="fName"/>
-          <include name="passwd"/>
-          <include name="phone"/>
           <include name="setUpBeforeClass"/>
-          <include name="addressTwo"/>
-          <include name="confirmPasswd"/>
-          <include name="registerButton"/>
-          <include name="continueButtonClick"/>
           <include name="setUp"/>
-          <include name="addressOne"/>
-          <include name="messageVerify"/>
-          <include name="email"/>
-          <include name="lName"/>
+          <include name="guestplaceAnOrder"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.RegisterTestCases -->
+      </class> <!-- com.training.regression.tests.LoginMultipleValuesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,11 +1,15 @@
 package com.training.pom;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class RetailRegisterPOM {
 	private WebDriver driver;
@@ -15,6 +19,7 @@ public class RetailRegisterPOM {
 		PageFactory.initElements(driver, this);
 	}
 
+	// Test Case 1
 	@FindBy(css = "i.fa.fa-user-o")
 	private WebElement accountLink;
 
@@ -23,7 +28,7 @@ public class RetailRegisterPOM {
 		action.moveToElement(accountLink).build().perform();
 	}
 
-	@FindBy(xpath = "//span[contains(text(),'LOGIN')]")
+	@FindBy(xpath = "//span[contains(text(),'LOGIN / REGISTER')]")
 	private WebElement loginRegClk;
 
 	@FindBy(css = "a.btn.btn-primary")
@@ -86,16 +91,16 @@ public class RetailRegisterPOM {
 
 	@FindBy(xpath = "//div[@class='tb_text_wrap tb_sep']")
 	private WebElement verifyMessage;
-	
-	//------------TestCase 2----------------------------------------
+
+	// Test Case 2
 	@FindBy(id = "input-email")
 	private WebElement emailAddress;
 
 	@FindBy(xpath = "//input[@value='Login']")
 	private WebElement loginBtn;
-	
-	//------------TestCase 3----------------------------------------
-	
+
+	// Test Case 3
+
 	@FindBy(linkText = "Forgotten Password")
 	private WebElement forgotLnk;
 
@@ -104,9 +109,37 @@ public class RetailRegisterPOM {
 
 	@FindBy(xpath = "//input[@value='Continue']")
 	private WebElement clkContinueBtn;
-	
-	//---------------------------------------------
 
+	// Test case 4
+
+	@FindBy(xpath = "//input[@id='filter_keyword']")
+	private WebElement srchProduct;
+
+	@FindBy(xpath = "//a[@id='search_button']")
+	private WebElement clkProdSrch;
+
+	@FindBy(xpath = "//a[contains(text(),'Integer Vitae Iaculis Massa')]")
+	private WebElement clkOnProd;
+
+	@FindBy(xpath = "//button[@id='button-cart']")
+	private WebElement clkAddonCart;
+	
+
+	@FindBy(css = "i.tb_icon.ico-linea-ecommerce-bag")
+	private WebElement hoverCart;
+
+	public void mousehovercart() {
+		Actions action = new Actions(driver);
+		action.moveToElement(hoverCart).build().perform();
+	}
+
+	@FindBy(xpath = "//a[contains(text(),'View Cart')]")
+	private WebElement viewCart;
+
+	@FindBy(css = "a.btn.btn-primary")
+	private WebElement chkOutbtn;
+
+	// Test Case 1
 	public void ClkLoginRegister() {
 		this.loginRegClk.click();
 	}
@@ -182,14 +215,17 @@ public class RetailRegisterPOM {
 		String message = verifyMessage.getText();
 		System.out.println(message);
 	}
-// ----- Test case 2----------
+
+	// Test Case 2
 	public void sendEmailAddress(String emailaddress) {
 		this.emailAddress.sendKeys(emailaddress);
 	}
+
 	public void clickLoginBtn() {
 		this.loginBtn.click();
 	}
-// ------Test case 3---------
+
+	// Test Case 3
 	public void forgotPasswordLink() {
 		this.forgotLnk.click();
 	}
@@ -200,6 +236,38 @@ public class RetailRegisterPOM {
 
 	public void clickContinue() {
 		this.clkContinueBtn.click();
+	}
+
+	// Test case 4
+	public void srchProductText() {
+		this.srchProduct.sendKeys("Integer Vitae Iaculis Massa");
+	}
+
+	public void srchProdClk() {
+		this.clkProdSrch.click();
+	}
+
+	public void clkOnProdSrch() {
+		this.clkOnProd.click();
+	}
+
+	public void clkonAddCart() throws Exception {
+		this.clkAddonCart.click();
+//		Thread.sleep(3000);
+//		Alert alert = driver.switchTo().alert();
+//		alert.accept();
+//		String text = driver.switchTo().alert().getText();
+//		System.out.println(text);
+		
+		
+
+}
+	public void viewCartClk() {
+		this.viewCart.click();
+	}
+
+	public void clkChkOutButton() {
+		this.chkOutbtn.click();
 	}
 
 }

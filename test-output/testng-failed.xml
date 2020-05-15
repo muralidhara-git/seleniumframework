@@ -3,14 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Retail Upskill test Suite]">
   <test name="Registration test(failed)">
     <classes>
-      <class name="com.training.sanity.tests.RetailRegisterTest">
+      <class name="com.training.regression.tests.LoginMultipleValuesTest">
         <methods>
           <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="registerDetails"/>
+          <include name="registerdplaceAnOrder"/>
           <include name="setUpBeforeClass"/>
+          <include name="setUp"/>
+          <include name="guestplaceAnOrder"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.RetailRegisterTest -->
+      </class> <!-- com.training.regression.tests.LoginMultipleValuesTest -->
     </classes>
   </test> <!-- Registration test(failed) -->
 </suite> <!-- Failed suite [Retail Upskill test Suite] -->
