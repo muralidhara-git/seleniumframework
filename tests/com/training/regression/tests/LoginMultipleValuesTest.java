@@ -55,7 +55,7 @@ public class LoginMultipleValuesTest {
 		driver.quit();
 	}
 
-	@Test(priority = 1, dataProvider = "inputs")
+	@Test(priority = 1, dataProvider = "inputs" , enabled = true)
 	public void loginUsingDataProvider(String userName, String password) {
 		loginPOM.accntClk();
 		loginPOM.ClkLoginRegister();
@@ -65,7 +65,7 @@ public class LoginMultipleValuesTest {
 		screenShot.captureScreenShot(userName);
 	}
 
-	@Test(priority = 2 )
+	@Test(priority = 2, enabled = true )
 	public void chkOutPreLogin() throws Exception {
 		loginPOM.srchProductText();
 		loginPOM.srchProdClk();
@@ -77,7 +77,7 @@ public class LoginMultipleValuesTest {
 		screenShot.captureScreenShot("Checking Out Without Pre-Logging In");
 	}
 
-	@Test(priority = 3 )
+	@Test(priority = 3, enabled = true )
 	public void registerdplaceAnOrder() throws Exception {
 		loginPOM.srchProductText();
 		loginPOM.srchProdClk();
@@ -103,7 +103,7 @@ public class LoginMultipleValuesTest {
 		screenShot.captureScreenShot("Successful Place an Order");
 	}
 
-	@Test(priority = 4 )
+	@Test(priority = 4 , enabled = true )
 	public void guestplaceAnOrder() throws Exception {
 		loginPOM.srchProductText();
 		loginPOM.srchProdClk();
@@ -161,6 +161,7 @@ public class LoginMultipleValuesTest {
 		loginPOM.selectEndDate();
 		loginPOM.clkOnRewardPointTab();
 		loginPOM.clickSaveBtn();
+		screenShot.captureScreenShot("Add Product");
 		
 	}	
 		

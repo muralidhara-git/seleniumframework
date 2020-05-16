@@ -20,11 +20,7 @@ public class LoginPOM {
 	@FindBy(css = "i.fa.fa-user-o")
 	private WebElement accountLink;
 
-	public void accntClk() {
-		Actions action = new Actions(driver);
-		action.moveToElement(accountLink).build().perform();
-	}
-
+	
 	@FindBy(xpath = "//span[contains(text(),'LOGIN / REGISTER')]")
 	private WebElement loginRegClk;
 
@@ -56,11 +52,6 @@ public class LoginPOM {
 
 	@FindBy(css = "i.tb_icon.ico-linea-ecommerce-bag")
 	private WebElement hoverCart;
-
-	public void mousehovercart() {
-		Actions action = new Actions(driver);
-		action.moveToElement(hoverCart).build().perform();
-	}
 
 	@FindBy(xpath = "//a[contains(text(),'View Cart')]")
 	private WebElement viewCart;
@@ -132,19 +123,9 @@ public class LoginPOM {
 
 	@FindBy(id = "input-payment-country")
 	private WebElement selectCountry;
-
-	public void countrySelection() {
-		Select select = new Select(selectCountry);
-		select.selectByVisibleText("India");
-	}
-
+	
 	@FindBy(id = "input-payment-zone")
 	private WebElement selectRegion;
-
-	public void regionSelection() {
-		Select select = new Select(selectRegion);
-		select.selectByVisibleText("Karnataka");
-	}
 
 	@FindBy(xpath = "//input[@name='shipping_address']")
 	private WebElement selectDeliveryChkBox;
@@ -180,10 +161,6 @@ public class LoginPOM {
 	@FindBy(css = "i.fa.fa-tags.fw")
 	private WebElement MousehoverCategory;
 
-	public void ProdcutMouseHover() {
-		Actions action = new Actions(driver);
-		action.moveToElement(MousehoverCategory).perform();
-	}
 
 	@FindBy(xpath = "//li[@id='menu-catalog']/ul/li[2]/a")
 	private WebElement clkProductLnk;
@@ -241,7 +218,16 @@ public class LoginPOM {
 
 	@FindBy(xpath = "//button[@type='submit']/i")
 	private WebElement clkSaveBtn;
+	
+	public void accntClk() {
+		Actions action = new Actions(driver);
+		action.moveToElement(accountLink).build().perform();
+	}
 
+	public void mousehovercart() {
+		Actions action = new Actions(driver);
+		action.moveToElement(hoverCart).build().perform();
+	}
 	public void srchProductText() {
 		this.srchProduct.sendKeys("Integer Vitae Iaculis Massa");
 	}
@@ -363,6 +349,14 @@ public class LoginPOM {
 	public void entercity(String city) {
 		this.city.sendKeys(city);
 	}
+	public void countrySelection() {
+		Select select = new Select(selectCountry);
+		select.selectByVisibleText("India");
+	}
+	public void regionSelection() {
+		Select select = new Select(selectRegion);
+		select.selectByVisibleText("Karnataka");
+	}
 
 	public void enterPostal(String postalcode) {
 		this.postalCode.sendKeys(postalcode);
@@ -410,6 +404,11 @@ public class LoginPOM {
 
 	public void clickAdminLoginButton() {
 		this.clkAdminLoginBtn.click();
+	}
+
+	public void ProdcutMouseHover() {
+		Actions action = new Actions(driver);
+		action.moveToElement(MousehoverCategory).perform();
 	}
 
 	public void clickProductCatgegory() {

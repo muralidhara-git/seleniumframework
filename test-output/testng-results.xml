@@ -1,222 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="1" total="8" passed="5">
+<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Retail Upskill test Suite" duration-ms="431720" started-at="2020-05-15T09:30:17Z" finished-at="2020-05-15T09:37:29Z">
+  <suite name="Retail Upskill test Suite" duration-ms="93050" started-at="2020-05-16T13:49:50Z" finished-at="2020-05-16T13:51:23Z">
     <groups>
     </groups>
-    <test name="Registration test" duration-ms="431720" started-at="2020-05-15T09:30:17Z" finished-at="2020-05-15T09:37:29Z">
+    <test name="Registration test" duration-ms="93050" started-at="2020-05-16T13:49:50Z" finished-at="2020-05-16T13:51:23Z">
       <class name="com.training.regression.tests.LoginMultipleValuesTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="setUpBeforeClass" is-config="true" duration-ms="9" started-at="2020-05-15T15:00:17Z" finished-at="2020-05-15T15:00:17Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="setUpBeforeClass" is-config="true" duration-ms="8" started-at="2020-05-16T19:19:50Z" finished-at="2020-05-16T19:19:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="setUp" is-config="true" duration-ms="59317" started-at="2020-05-15T15:00:17Z" finished-at="2020-05-15T15:01:16Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="setUp" is-config="true" duration-ms="29051" started-at="2020-05-16T19:19:50Z" finished-at="2020-05-16T19:20:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginUsingDataProvider(java.lang.String, java.lang.String)[pri:1, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="loginUsingDataProvider" duration-ms="16199" started-at="2020-05-15T15:01:16Z" data-provider="inputs" finished-at="2020-05-15T15:01:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[manzoor@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUsingDataProvider -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="1718" started-at="2020-05-15T15:01:33Z" finished-at="2020-05-15T15:01:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="setUp" is-config="true" duration-ms="32878" started-at="2020-05-15T15:01:34Z" finished-at="2020-05-15T15:02:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginUsingDataProvider(java.lang.String, java.lang.String)[pri:1, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="loginUsingDataProvider" duration-ms="14580" started-at="2020-05-15T15:02:07Z" data-provider="inputs" finished-at="2020-05-15T15:02:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[manzoor]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[manzoor]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUsingDataProvider -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="1703" started-at="2020-05-15T15:02:22Z" finished-at="2020-05-15T15:02:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="setUp" is-config="true" duration-ms="23606" started-at="2020-05-15T15:02:23Z" finished-at="2020-05-15T15:02:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginUsingDataProvider(java.lang.String, java.lang.String)[pri:1, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="loginUsingDataProvider" duration-ms="9542" started-at="2020-05-15T15:02:47Z" data-provider="inputs" finished-at="2020-05-15T15:02:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[manzoor]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[mehadi]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUsingDataProvider -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="1667" started-at="2020-05-15T15:02:57Z" finished-at="2020-05-15T15:02:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="setUp" is-config="true" duration-ms="58176" started-at="2020-05-15T15:02:58Z" finished-at="2020-05-15T15:03:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginUsingDataProvider(java.lang.String, java.lang.String)[pri:1, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="loginUsingDataProvider" duration-ms="8858" started-at="2020-05-15T15:03:56Z" data-provider="inputs" finished-at="2020-05-15T15:04:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[manz1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[manz1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUsingDataProvider -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="1689" started-at="2020-05-15T15:04:05Z" finished-at="2020-05-15T15:04:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="setUp" is-config="true" duration-ms="24555" started-at="2020-05-15T15:04:07Z" finished-at="2020-05-15T15:04:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="chkOutPreLogin()[pri:2, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="chkOutPreLogin" duration-ms="59074" started-at="2020-05-15T15:04:32Z" finished-at="2020-05-15T15:05:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chkOutPreLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="1704" started-at="2020-05-15T15:05:31Z" finished-at="2020-05-15T15:05:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="setUp" is-config="true" duration-ms="23089" started-at="2020-05-15T15:05:32Z" finished-at="2020-05-15T15:05:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="registerdplaceAnOrder()[pri:3, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="registerdplaceAnOrder" duration-ms="46243" started-at="2020-05-15T15:05:55Z" finished-at="2020-05-15T15:06:42Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
-	at com.training.pom.LoginPOM.sendEmailAddress(LoginPOM.java:272)
-	at com.training.regression.tests.LoginMultipleValuesTest.registerdplaceAnOrder(LoginMultipleValuesTest.java:89)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="registerdplaceAnOrder()[pri:3, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="registerdplaceAnOrder" duration-ms="62209" started-at="2020-05-16T19:20:19Z" finished-at="2020-05-16T19:21:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerdplaceAnOrder -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="1547" started-at="2020-05-15T15:06:42Z" finished-at="2020-05-15T15:06:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="setUp" is-config="true" duration-ms="33333" started-at="2020-05-15T15:06:43Z" finished-at="2020-05-15T15:07:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="guestplaceAnOrder()[pri:4, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="guestplaceAnOrder" duration-ms="10624" started-at="2020-05-15T15:07:17Z" finished-at="2020-05-15T15:07:27Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at com.training.pom.LoginPOM.clkOnProdSrch(LoginPOM.java:254)
-	at com.training.regression.tests.LoginMultipleValuesTest.guestplaceAnOrder(LoginMultipleValuesTest.java:110)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- guestplaceAnOrder -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="1554" started-at="2020-05-15T15:07:27Z" finished-at="2020-05-15T15:07:29Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="1765" started-at="2020-05-16T19:21:22Z" finished-at="2020-05-16T19:21:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
