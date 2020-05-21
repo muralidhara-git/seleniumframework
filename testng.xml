@@ -5,8 +5,9 @@
    <test name = "Registration test">
       <classes>
 <!--          <class name = "com.training.sanity.tests.RetailRegisterTest" />  -->
-	          <class name = "com.training.regression.tests.LoginMultipleValuesTest" />    
-
+<!-- 	          <class name = "com.training.regression.tests.LoginMultipleValuesTest" />     -->
+<!--  			   <class name = "com.training.regression.tests.LoginExcelTest" />     -->
+ 			   <class name = "com.training.regression.tests.LoginDBTest" />    
  
    			 
       </classes>
