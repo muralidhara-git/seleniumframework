@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Retail Upskill test Suite]">
-  <test name="Registration test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.training.regression.tests.LoginMultipleValuesTest">
+      <class name="com.training.regression.tests.LoginDBTest">
         <methods>
           <include name="tearDown"/>
-          <include name="registerdplaceAnOrder"/>
-          <include name="setUpBeforeClass"/>
+          <include name="loginDBTest"/>
           <include name="setUp"/>
-          <include name="guestplaceAnOrder"/>
+          <include name="setUpBeforeClass"/>
         </methods>
-      </class> <!-- com.training.regression.tests.LoginMultipleValuesTest -->
+      </class> <!-- com.training.regression.tests.LoginDBTest -->
     </classes>
-  </test> <!-- Registration test(failed) -->
-</suite> <!-- Failed suite [Retail Upskill test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

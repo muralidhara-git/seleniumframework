@@ -17,18 +17,19 @@ import com.training.dataproviders.LoginDataProviders;
 import com.training.generics.GenericMethods;
 import com.training.generics.ScreenShot;
 import com.training.pom.LoginPOM;
+import com.training.pom.RetailRegisterPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
 public class LoginDBTest {
 	private WebDriver driver;
 	private String baseUrl;
-	private LoginPOM loginPOM;
+	// private LoginPOM loginPOM;
+	private RetailRegisterPOM retailPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
-	private GenericMethods genericMethods; 
-	
-	
+	private GenericMethods genericMethods;
+
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
@@ -39,10 +40,11 @@ public class LoginDBTest {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new LoginPOM(driver);
+		// loginPOM = new LoginPOM(driver);
+		retailPOM = new RetailRegisterPOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
-		genericMethods = new GenericMethods(driver); 
+		genericMethods = new GenericMethods(driver);
 		// open the browser
 		driver.get(baseUrl);
 	}
@@ -53,18 +55,36 @@ public class LoginDBTest {
 		driver.quit();
 	}
 
-
 	@Test(dataProvider = "db-inputs", dataProviderClass = LoginDataProviders.class)
-	public void loginDBTest(String userName, String password) {
-		// for demonstration 
-//		genericMethods.getElement("login", "id"); 
-				
-//		loginPOM.sendUserName(userName);
-		
-//		loginPOM.sendPassword(password);
-		loginPOM.clickLoginBtn();
-		
-		screenShot.captureScreenShot(userName);
+	public void loginDBTest(String firstname, String lastname, String email, String telephone, String address1,
+			String address2, String city, String postalcode, String country, String state, String password,
+			String confirmpassword) {
+		// for demonstration
+		// genericMethods.getElement("login", "id");
+		// loginPOM.sendUserName(userName);
+		// loginPOM.sendPassword(password);
+		// loginPOM.clickLoginBtn();
+		// screenShot.captureScreenShot(userName);
+		retailPOM.accntClk();
+		retailPOM.ClkLoginRegister();
+		retailPOM.registerClick();
+		retailPOM.enterFName(firstname);
+		retailPOM.enterLName(lastname);
+		retailPOM.enterEmail(email);
+		retailPOM.enterTPhone(telephone);
+		retailPOM.enterAddress1(address1);
+		retailPOM.enterAddress2(address2);
+		retailPOM.enterCity(city);
+		retailPOM.enterPinCode(postalcode);
+		retailPOM.selectCountry();
+		retailPOM.selectState();
+		retailPOM.enterPassword(password);
+		retailPOM.confirmPassword(confirmpassword);
+		retailPOM.selectNoRadioBtn();
+		retailPOM.checkCheckBox();
+		retailPOM.continueButton();
+		retailPOM.verifyTheMessage();
+		screenShot.captureScreenShot("Registered user details stored in database");
 
 	}
 

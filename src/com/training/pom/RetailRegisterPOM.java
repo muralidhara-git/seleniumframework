@@ -181,12 +181,12 @@ public class RetailRegisterPOM {
 		this.pinCode.sendKeys(pincode);
 	}
 
-	public void selctContry() {
+	public void selctContry(String country) {
 		this.selectCountry();
 	}
 
-	public void selctState() {
-		this.selctState();
+	public void selctState(String state) {
+		this.selectState();
 	}
 
 	public void enterPassword(String pass) {

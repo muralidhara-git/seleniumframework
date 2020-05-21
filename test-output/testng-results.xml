@@ -1,29 +1,313 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Retail Upskill test Suite" duration-ms="93050" started-at="2020-05-16T13:49:50Z" finished-at="2020-05-16T13:51:23Z">
+  <suite name="Default suite" duration-ms="180926" started-at="2020-05-21T03:26:56Z" finished-at="2020-05-21T03:29:57Z">
     <groups>
     </groups>
-    <test name="Registration test" duration-ms="93050" started-at="2020-05-16T13:49:50Z" finished-at="2020-05-16T13:51:23Z">
-      <class name="com.training.regression.tests.LoginMultipleValuesTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="setUpBeforeClass" is-config="true" duration-ms="8" started-at="2020-05-16T19:19:50Z" finished-at="2020-05-16T19:19:50Z">
+    <test name="Default test" duration-ms="180926" started-at="2020-05-21T03:26:56Z" finished-at="2020-05-21T03:29:57Z">
+      <class name="com.training.regression.tests.LoginExcelTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.LoginExcelTest@4678c730]" name="setUpBeforeClass" is-config="true" duration-ms="14" started-at="2020-05-21T08:56:56Z" finished-at="2020-05-21T08:56:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="setUp" is-config="true" duration-ms="29051" started-at="2020-05-16T19:19:50Z" finished-at="2020-05-16T19:20:19Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginExcelTest@4678c730]" name="setUp" is-config="true" duration-ms="39781" started-at="2020-05-21T08:56:57Z" finished-at="2020-05-21T08:57:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registerdplaceAnOrder()[pri:3, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="registerdplaceAnOrder" duration-ms="62209" started-at="2020-05-16T19:20:19Z" finished-at="2020-05-16T19:21:22Z">
+        <test-method status="PASS" signature="loginExcelTest1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@4678c730]" name="loginExcelTest1" duration-ms="17288" started-at="2020-05-21T08:57:37Z" data-provider="excel-inputs" finished-at="2020-05-21T08:57:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manipal]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1233423.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[manipal@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9.87654321E9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[yeshwanthapur]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[560022.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[manipal%26]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[manipal]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerdplaceAnOrder -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginMultipleValuesTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="1765" started-at="2020-05-16T19:21:22Z" finished-at="2020-05-16T19:21:23Z">
+        </test-method> <!-- loginExcelTest1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginExcelTest@4678c730]" name="tearDown" is-config="true" duration-ms="720" started-at="2020-05-21T08:57:54Z" finished-at="2020-05-21T08:57:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.regression.tests.LoginMultipleValuesTest -->
-    </test> <!-- Registration test -->
-  </suite> <!-- Retail Upskill test Suite -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginExcelTest@4678c730]" name="setUp" is-config="true" duration-ms="23409" started-at="2020-05-21T08:57:55Z" finished-at="2020-05-21T08:58:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginExcelTest1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@4678c730]" name="loginExcelTest1" duration-ms="12953" started-at="2020-05-21T08:58:18Z" data-provider="excel-inputs" finished-at="2020-05-21T08:58:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mehadi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[8.90654321E9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[electronic city]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[560100.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[manzoor^hs]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginExcelTest1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginExcelTest@4678c730]" name="tearDown" is-config="true" duration-ms="727" started-at="2020-05-21T08:58:31Z" finished-at="2020-05-21T08:58:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginExcelTest@4678c730]" name="setUp" is-config="true" duration-ms="24384" started-at="2020-05-21T08:58:32Z" finished-at="2020-05-21T08:58:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginExcelTest1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@4678c730]" name="loginExcelTest1" duration-ms="18319" started-at="2020-05-21T08:58:56Z" data-provider="excel-inputs" finished-at="2020-05-21T08:59:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[puli]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[keshi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[puli@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sfgdfgdf]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chennai]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[chennai]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[chennai]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[561321.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Tamil Nadu]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[pulikeshiSy]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[pulikeshi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginExcelTest1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginExcelTest@4678c730]" name="tearDown" is-config="true" duration-ms="722" started-at="2020-05-21T08:59:14Z" finished-at="2020-05-21T08:59:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginExcelTest@4678c730]" name="setUp" is-config="true" duration-ms="24197" started-at="2020-05-21T08:59:15Z" finished-at="2020-05-21T08:59:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginExcelTest1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@4678c730]" name="loginExcelTest1" duration-ms="17153" started-at="2020-05-21T08:59:39Z" data-provider="excel-inputs" finished-at="2020-05-21T08:59:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[priya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[prabhu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[priya@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[8.906754321E9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[hyderabad]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[hyderabad]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[hyderabad]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9876547.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Telangana]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[priya^#7]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[priya]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginExcelTest1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginExcelTest@4678c730]" name="tearDown" is-config="true" duration-ms="732" started-at="2020-05-21T08:59:56Z" finished-at="2020-05-21T08:59:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.regression.tests.LoginExcelTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
